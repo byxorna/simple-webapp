@@ -4,4 +4,4 @@ WORKDIR /app
 COPY . /app
 COPY ./entrypoint.sh /bin/entrypoint.sh
 EXPOSE $PORT
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/bin/entrypoint.sh"]
